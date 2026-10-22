@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planergy — Manage Your Time, Save Your Energy</title>
+  <meta name="description" content="Planergy adalah yayasan yang mendampingi komunitas melalui pendidikan, lingkungan, dan pemberdayaan ekonomi.">
+  <meta name="theme-color" content="#faf7f2">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231f4d3b'/%3E%3Cpath d='M16 7c5 3 7 7 7 11a7 7 0 0 1-14 0c0-4 2-8 7-11z' fill='%23d4b27a'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Terapkan tema sebelum render agar tidak berkedip
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (!t && window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) t = 'dark';
+      document.documentElement.setAttribute('data-theme', t || 'light');
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+
+  <!-- HEADER + NAVIGASI (sticky) -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#welcome" aria-label="Planergy, ke beranda">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28"><rect width="32" height="32" rx="8" fill="currentColor"/><path d="M16 7c5 3 7 7 7 11a7 7 0 0 1-14 0c0-4 2-8 7-11z" fill="var(--accent-2)"/></svg>
+        </span>
+        <span class="brand-name">Planergy</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navigasi utama">
+        <ul>
+          <li><a href="#welcome" class="nav-link">Beranda</a></li>
+          <li><a href="#about" class="nav-link">Tentang</a></li>
+          <li><a href="#report" class="nav-link">Laporan</a></li>
+          <li><a href="#video" class="nav-link">Video</a></li>
+          <li><a href="#teams" class="nav-link">Teams</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Ganti tema gelap atau terang">
+          <svg class="i-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="i-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <a class="btn btn-primary btn-sm header-cta" href="#contact">Hubungi kami</a>
+        <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Buka menu">
+          <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+        </button>
+      </div>
+    </div>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+
+    <!-- WELCOME -->
+    <section class="hero" id="welcome" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">DESIGN THINKING</p>
+          <h1>Manage Time,<br><em>Save Energy</em></h1>
+          <p class="lead">Platform manajemen waktu yang membantu mahasiswa mengatur jadwal, menentukan prioritas, dan mengelola beban kegiatan melalui sistem koin energi.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#about">Kenali kami</a>
+            <a class="btn btn-ghost" href="#video">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg>
+              Tonton video
+            </a>
+          </div>
+          <!-- <dl class="hero-facts">
+            <div><dt>Sejak</dt><dd>2012</dd></div>
+            <div><dt>Wilayah</dt><dd>34 desa</dd></div>
+            <div><dt>Relawan</dt><dd>420+</dd></div>
+          </dl> -->
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orb orb-a"></div>
+          <div class="orb orb-b"></div>
+          <div class="hero-card">
+            <svg viewBox="0 0 320 260" class="hero-art" role="presentation">
+              <defs>
+                <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--accent-2)" stop-opacity=".95"/><stop offset="1" stop-color="var(--accent-2)" stop-opacity=".55"/></linearGradient>
+              </defs>
+              <circle cx="238" cy="62" r="34" fill="url(#g1)"/>
+              <path d="M0 190 C60 140 110 150 160 175 C210 200 260 150 320 165 L320 260 L0 260 Z" fill="var(--accent)" opacity=".28"/>
+              <path d="M0 215 C70 175 120 190 170 205 C230 222 270 185 320 200 L320 260 L0 260 Z" fill="var(--accent)" opacity=".55"/>
+              <path d="M0 240 C80 215 130 228 190 235 C240 240 290 224 320 230 L320 260 L0 260 Z" fill="var(--accent)"/>
+              <g stroke="var(--accent)" stroke-width="3" stroke-linecap="round" fill="none">
+                <path d="M88 168 v-48"/><path d="M88 140 c-16 -4 -22 -16 -22 -26 c14 0 22 10 22 26z" fill="var(--accent)"/>
+                <path d="M88 126 c14 -2 22 -14 22 -24 c-14 0 -22 10 -22 24z" fill="var(--accent)"/>
+              </g>
+            </svg>
+            <div class="chip chip-1"><strong>Koin</strong><span>Energi</span></div>
+            <div class="chip chip-2"><strong>Planner</strong><span>Waktu teratur</span></div>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#about" aria-label="Gulir ke bagian tentang">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Tentang kami</p>
+          <h2 id="about-title">Atur waktumu, kelola energimu, capai tujuanmu!</h2>
+          <p class="lead">Planergy dikembangkan sebagai solusi bagi mahasiswa yang kesulitan membagi waktu antara perkuliahan, tugas, organisasi, UKM, dan istirahat.</p>
+        </div>
+
+        <!-- <div class="about-grid">
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-4 9 4-9 4-9-4z"/><path d="M7 10.5V15c0 1.4 2.2 3 5 3s5-1.6 5-3v-4.5"/></svg>
+            </span>
+            <h3>Pendidikan</h3>
+            <p>Pelatihan guru, perpustakaan desa, dan kelas literasi untuk anak maupun orang dewasa.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-8"/><path d="M12 13c-4 0-6-2.5-6-6 4 0 6 2.5 6 6z"/><path d="M12 15c0-3 2-5 6-5 0 3.500-2 5-6 5z"/></svg>
+            </span>
+            <h3>Lingkungan</h3>
+            <p>Penanaman mangrove, bank sampah, dan pengelolaan air bersih yang dikelola kelompok warga.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V9"/><path d="M10 19V5"/><path d="M16 19v-7"/><path d="M22 19H2"/></svg>
+            </span>
+            <h3>Ekonomi</h3>
+            <p>Pendampingan usaha kecil, koperasi, dan akses pemasaran bagi pelaku usaha perempuan.</p>
+          </article>
+        </div> -->
+
+        <div class="about-split reveal">
+          <div>
+            <h3>Nilai yang kami pegang</h3>
+            <ul class="check-list">
+              <li>Transparan: </li>
+              <li>Partisipatif: </li>
+              <li>Berkelanjutan: </li>
+            </ul>
+            <a class="btn btn-ghost" href="#report">Lihat laporan</a>
+          </div>
+          <blockquote class="quote">
+            <p>“Kami tidak datang membawa jawaban. Kami datang membawa waktu untuk mendengar.”</p>
+            <footer>Tim lapangan Planergy</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- REPORT -->
+    <section class="section section-alt" id="report" aria-labelledby="report-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <!-- <p class="eyebrow">Laporan</p> -->
+          <h2 id="report-title">Laporan</h2>
+          <p class="lead">Ringkasan capaian tahunan. Pilih tahun untuk melihat perbandingannya, lalu unduh datanya.</p>
+        </div>
+
+        <div class="report-controls reveal">
+          <div class="tabs" role="tablist" aria-label="Pilih tahun laporan" id="year-tabs"></div>
+          <button class="btn btn-primary btn-sm" type="button" id="download-report">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M5 21h14"/></svg>
+            Unduh data (CSV)
+          </button>
+        </div>
+
+        <div class="report-grid" id="report-panel" role="tabpanel" aria-live="polite">
+          <div class="metrics" id="metrics"></div>
+          <div class="chart-card">
+            <div class="chart-head">
+              <h3>Penerima manfaat per triwulan</h3>
+              <span class="chart-year" id="chart-year"></span>
+            </div>
+            <div class="chart" id="chart" role="img" aria-label="Grafik batang penerima manfaat per triwulan"></div>
+            <p class="chart-note" id="chart-note"></p>
+          </div>
+        </div>
+        <p class="fineprint">Data pada halaman ini adalah contoh. Ganti dengan angka resmi di <code>script.js</code>.</p>
+      </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section class="section" id="video" aria-labelledby="video-title">
+      <div class="container video-wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Video</p>
+          <h2 id="video-title">Porototype.</h2>
+          <!-- <p class="lead">Tiga menit perjalanan bersama tim dan warga dampingan kami.</p> -->
+        </div>
+
+        <div class="video-frame reveal" id="video-frame" data-video-id="YE7VzlLtp-4">
+          <button class="video-poster" id="video-play" type="button" aria-label="Putar video">
+            <span class="video-poster-bg" aria-hidden="true"></span>
+            <span class="play-btn" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg>
+            </span>
+            <span class="video-caption">Profil Planergy · 3:12</span>
+          </button>
+        </div>
+        <p class="fineprint">Ganti ID video pada atribut <code>data-video-id</code> di <code>index.html</code>.</p>
+      </div>
+    </section>
+  </main>
+
+   <!-- TEAMS -->
+    <section class="section section-alt" id="teams" aria-labelledby="teams-title" >
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Teams</p>
+          <h2 id="teams-title">Tim di balik Planergy</h2>
+        </div>
+        <div class="team-grid">
+          <article class="member reveal">
+            <img src="images/team-1.jpg" alt="Foto Nama Anggota 1" width="480"  loading="lazy">
+            <div class="member-info">
+              <h3>Nama Anggota 1</h3>
+              <p>No. Anggota: <span>00000001</span></p>
+            </div>
+          </article>
+          <article class="member reveal">
+            <img src="images/team-2.jpg" alt="Foto Nama Anggota 2" width="480"  loading="lazy">
+            <div class="member-info">
+              <h3>Nama Anggota 2</h3>
+              <p>No. Anggota: <span>00000002</span></p>
+            </div>
+          </article>
+          <article class="member reveal">
+            <img src="images/team-3.jpg" alt="Foto Nama Anggota 3" width="480"  loading="lazy">
+            <div class="member-info">
+              <h3>Nama Anggota 3</h3>
+              <p>No. Anggota: <span>00000003</span></p>
+            </div>
+          </article>
+          <article class="member reveal">
+            <img src="images/team-4.jpg" alt="Foto Nama Anggota 4" width="480" loading="lazy">
+            <div class="member-info">
+              <h3>Nama Anggota 4</h3>
+              <p>No. Anggota: <span>00000004</span></p>
+            </div>
+          </article>
+          <article class="member reveal">
+            <img src="images/team-5.jpg" alt="Foto Nama Anggota 5" width="480"  loading="lazy">
+            <div class="member-info">
+              <h3>Nama Anggota 5</h3>
+              <p>No. Anggota: <span>00000005</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <!-- <div class="container footer-grid"> -->
+      <!-- <div class="footer-brand">
+        <a class="brand" href="#welcome" aria-label="Planergy, ke beranda">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="28" height="28"><rect width="32" height="32" rx="8" fill="currentColor"/><path d="M16 7c5 3 7 7 7 11a7 7 0 0 1-14 0c0-4 2-8 7-11z" fill="var(--accent-2)"/></svg>
+          </span>
+          <span class="brand-name">Planergy</span>
+        </a>
+        <p>Mendampingi komunitas tumbuh mandiri sejak 2012.</p>
+        <address>
+          Jl. Contoh No. 12, Surabaya<br>
+          <a href="mailto:halo@Planergy.example">halo@Planergy.example</a>
+        </address>
+      </div>
+
+      <nav class="footer-nav" aria-label="Navigasi footer">
+        <h3>Jelajahi</h3>
+        <ul>
+          <li><a href="#welcome">Beranda</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#report">Laporan</a></li>
+          <li><a href="#video">Video</a></li>
+        </ul>
+      </nav>
+
+      <form class="newsletter" id="newsletter" novalidate>
+        <h3>Kabar dari lapangan</h3>
+        <p>Satu surel per bulan. Tanpa spam.</p>
+        <div class="field">
+          <label for="email" class="sr-only">Alamat surel</label>
+          <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="nama@surel.com" required>
+          <button class="btn btn-primary btn-sm" type="submit">Berlangganan</button>
+        </div>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div> -->
+
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span>Planergy. Semua hak dilindungi.</p>
+      <button class="to-top" id="to-top" type="button">
+        Kembali ke atas
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
+      </button>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
