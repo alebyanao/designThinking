@@ -1,25 +1,25 @@
 [
   {
-    "category": "Data Needfinding",
+    "category": "Emphatize",
     "title": "Hasil Wawancara Needfinding",
     "desc": "Ringkasan temuan wawancara dengan 3 level tingkat pengguna.",
     "src": "files/needfinding/needfinding.pdf"
   },
   {
-    "category": "Pov & HMW",
+    "category": "Define",
     "title": "POV dan HMW",
     "desc": "Rumusan masalah dan pertanyaan HMW tim.",
     "src": "files/povhmw/brainstorming_pov_hmw.pdf"
   },
   {
-    "category": "Pov & HMW",
+    "category": "Define",
     "title": "Point of View dan How Might We",
     "desc": "Laporan POV dan Pengalaman user terhadap prototipe",
     "src": "files/povhmw/laporan.pdf"
   },
   {
-    "category": "Solutions",
-    "title": "Presentasi Solusi Planergy",
+    "category": "Ideate",
+    "title": "Solution",
     "desc": "Slide konsep solusi dan sistem koin energi.",
     "src": "files/solusi/brainstorming_solusi.pdf"
   },
