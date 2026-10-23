@@ -6,21 +6,39 @@
     "src": "files/needfinding/needfinding.pdf"
   },
   {
-    "category": "Define",
-    "title": "POV dan HMW",
-    "desc": "Rumusan masalah dan pertanyaan HMW tim.",
-    "src": "files/povhmw/brainstorming_pov_hmw.pdf"
+    "category": "Emphatize",
+    "title": "Emphaty Map",
+    "desc": "Pengelompokan temuan wawancara ke dalam 4 kuadran Emphaty Map.",
+    "src": "files/needfinding/emphaty_map.pdf"
   },
   {
     "category": "Define",
-    "title": "Point of View dan How Might We",
+    "title": "User Persona",
+    "desc": "Deskripsi detail tentang pengguna target dan kebutuhan mereka.",
+    "src": "files/povhmw/user_persona.pdf"
+  },
+  {
+    "category": "Define",
+    "title": "Insight",
+    "desc": "Temuan penting dari wawancara dan observasi.",
+    "src": "files/povhmw/insight.pdf"
+  },
+  {
+    "category": "Ideate",
+    "title": "Laporan",
     "desc": "Laporan POV dan Pengalaman user terhadap prototipe",
     "src": "files/povhmw/laporan.pdf"
   },
   {
     "category": "Ideate",
-    "title": "Solution",
-    "desc": "Slide konsep solusi dan sistem koin energi.",
+    "title": "Brainstorming POV & HMW",
+    "desc": "Dari POV user, dihasilkan 30 How Might We questions.",
+    "src": "files/povhmw/brainstorming_pov_hmw.pdf"
+  },
+  {
+    "category": "Ideate",
+    "title": "Brainstorming Solution",
+    "desc": "Dari 30 ide solusi, dihasilkan 3 solusi terbaik.",
     "src": "files/solusi/brainstorming_solusi.pdf"
   },
   {
