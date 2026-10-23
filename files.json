@@ -1,0 +1,20 @@
+[
+  {
+    "category": "Data Needfinding",
+    "title": "Hasil Wawancara Needfinding",
+    "desc": "Ringkasan temuan wawancara dengan mahasiswa.",
+    "src": "files/needfinding/needfinding.pdf"
+  },
+  {
+    "category": "Pov & HMW",
+    "title": "Point of View dan How Might We",
+    "desc": "Rumusan masalah dan pertanyaan HMW tim.",
+    "src": "files/povhmw/brainstorming_pov_hmw.pdf"
+  },
+  {
+    "category": "Solutions",
+    "title": "Presentasi Solusi Planergy",
+    "desc": "Slide konsep solusi dan sistem koin energi.",
+    "src": "files/solusi/brainstorming_solusi.pdf"
+  }
+]

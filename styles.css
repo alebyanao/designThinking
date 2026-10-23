@@ -201,6 +201,21 @@ code { font-size: .9em; background: var(--surface-2); padding: .1em .4em; border
 .video-caption { position: absolute; left: 1.5rem; bottom: 1.25rem; font-size: .9rem; opacity: .9; }
 
 
+/* ============ File laporan ============ */
+.tabs { flex-wrap: wrap; border-radius: 22px; }
+.file-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.25rem; }
+.file-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.5rem; display: grid; grid-template-rows: auto 1fr auto; gap: 1rem; transition: transform .3s, box-shadow .3s; }
+.file-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.file-badge { justify-self: start; display: grid; place-items: center; min-width: 52px; height: 52px; padding: 0 .6rem; border-radius: 12px; font: 700 .8rem var(--font-sans); letter-spacing: .06em; text-transform: uppercase; color: #fff; background: var(--accent); }
+.file-badge.ft-pdf { background: #c0462f; }
+.file-badge.ft-ppt, .file-badge.ft-pptx { background: #d07a2a; }
+.file-badge.ft-doc, .file-badge.ft-docx { background: #2f6bb3; }
+.file-badge.ft-xls, .file-badge.ft-xlsx, .file-badge.ft-csv { background: #2a8a55; }
+.file-body h3 { font-size: 1.15rem; margin-bottom: .4rem; word-break: break-word; }
+.file-body p { margin: 0 0 .6rem; color: var(--muted); font-size: .92rem; }
+.file-cat { font-size: .72rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--accent-2); }
+.file-card .btn { justify-self: start; }
+
 /* ============ Teams ============ */
 .team-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.25rem; }
 .member { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; text-align: center; transition: transform .3s, box-shadow .3s; }

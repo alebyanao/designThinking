@@ -160,35 +160,68 @@
       </div>
     </section>
 
+     <!-- TEAMS -->
+    <section class="section section-alt" id="teams" aria-labelledby="teams-title" >
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Teams</p>
+          <h2 id="teams-title">Anggota Tim</h2>
+        </div>
+        <div class="team-grid">
+          <article class="member reveal">
+            <img src="images/1.png" alt="Foto Nama Anggota 1" loading="lazy">
+            <div class="member-info">
+              <h3>Agha Nauval Andian</h3>
+              <h3><span>5026261027</span></h3>
+            </div>
+          </article>
+          <article class="member reveal">
+            <img src="images/2.png" alt="Foto Nama Anggota 2"  loading="lazy">
+            <div class="member-info">
+              <h3>Faiz Anggarianto A.</h3>
+              <h3><span>5026261157</span></h3>
+            </div>
+          </article>
+          <article class="member reveal">
+            <img src="images/3.png" alt="Foto Nama Anggota 3"   loading="lazy">
+            <div class="member-info">
+              <h3>Bintang Gema F.</h3>
+              <h3><span>5026261116</span></h3>
+            </div>
+          </article>
+          <article class="member reveal">
+            <img src="images/4.png" alt="Foto Nama Anggota 4" loading="lazy">
+            <div class="member-info">
+              <h3>Abelya Octaviani</h3>
+              <h3><span>5026261102</span></h3>
+            </div>
+          </article>
+          <article class="member reveal">
+            <img src="images/5.png" alt="Foto Nama Anggota 5"  loading="lazy">
+            <div class="member-info">
+              <h3>Ariendya Putri Kirana</h3>
+              <h3><span>5026261011</span></h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- REPORT -->
     <section class="section section-alt" id="report" aria-labelledby="report-title">
       <div class="container">
         <div class="section-head reveal">
           <!-- <p class="eyebrow">Laporan</p> -->
           <h2 id="report-title">Laporan</h2>
-          <p class="lead">Ringkasan capaian tahunan. Pilih tahun untuk melihat perbandingannya, lalu unduh datanya.</p>
+          <p class="lead">Kumpulan dokumen dan presentasi proyek kami. Pilih kategori untuk menyaring, lalu unduh file yang kamu butuhkan.</p>
         </div>
 
         <div class="report-controls reveal">
-          <div class="tabs" role="tablist" aria-label="Pilih tahun laporan" id="year-tabs"></div>
-          <button class="btn btn-primary btn-sm" type="button" id="download-report">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M5 21h14"/></svg>
-            Unduh data (CSV)
-          </button>
+          <div class="tabs" role="tablist" aria-label="Pilih kategori file" id="year-tabs"></div>
         </div>
 
-        <div class="report-grid" id="report-panel" role="tabpanel" aria-live="polite">
-          <div class="metrics" id="metrics"></div>
-          <div class="chart-card">
-            <div class="chart-head">
-              <h3>Penerima manfaat per triwulan</h3>
-              <span class="chart-year" id="chart-year"></span>
-            </div>
-            <div class="chart" id="chart" role="img" aria-label="Grafik batang penerima manfaat per triwulan"></div>
-            <p class="chart-note" id="chart-note"></p>
-          </div>
-        </div>
-        <p class="fineprint">Data pada halaman ini adalah contoh. Ganti dengan angka resmi di <code>script.js</code>.</p>
+        <div class="file-grid" id="report-panel" role="tabpanel" aria-live="polite"></div>
+        <p class="fineprint">Taruh file di <code>files/&lt;Nama Kategori&gt;/</code>, lalu jalankan <code>node build-files.js</code>. Judul dan keterangan diubah di <code>files/keterangan.json</code>.</p>
       </div>
     </section>
 
@@ -214,53 +247,6 @@
       </div>
     </section>
   </main>
-
-   <!-- TEAMS -->
-    <section class="section section-alt" id="teams" aria-labelledby="teams-title" >
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Teams</p>
-          <h2 id="teams-title">Tim di balik Planergy</h2>
-        </div>
-        <div class="team-grid">
-          <article class="member reveal">
-            <img src="images/team-1.jpg" alt="Foto Nama Anggota 1" width="480"  loading="lazy">
-            <div class="member-info">
-              <h3>Nama Anggota 1</h3>
-              <p>No. Anggota: <span>00000001</span></p>
-            </div>
-          </article>
-          <article class="member reveal">
-            <img src="images/team-2.jpg" alt="Foto Nama Anggota 2" width="480"  loading="lazy">
-            <div class="member-info">
-              <h3>Nama Anggota 2</h3>
-              <p>No. Anggota: <span>00000002</span></p>
-            </div>
-          </article>
-          <article class="member reveal">
-            <img src="images/team-3.jpg" alt="Foto Nama Anggota 3" width="480"  loading="lazy">
-            <div class="member-info">
-              <h3>Nama Anggota 3</h3>
-              <p>No. Anggota: <span>00000003</span></p>
-            </div>
-          </article>
-          <article class="member reveal">
-            <img src="images/team-4.jpg" alt="Foto Nama Anggota 4" width="480" loading="lazy">
-            <div class="member-info">
-              <h3>Nama Anggota 4</h3>
-              <p>No. Anggota: <span>00000004</span></p>
-            </div>
-          </article>
-          <article class="member reveal">
-            <img src="images/team-5.jpg" alt="Foto Nama Anggota 5" width="480"  loading="lazy">
-            <div class="member-info">
-              <h3>Nama Anggota 5</h3>
-              <p>No. Anggota: <span>00000005</span></p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
 
   <!-- FOOTER -->
   <footer class="site-footer">
