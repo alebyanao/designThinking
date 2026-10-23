@@ -2,19 +2,31 @@
   {
     "category": "Data Needfinding",
     "title": "Hasil Wawancara Needfinding",
-    "desc": "Ringkasan temuan wawancara dengan mahasiswa.",
+    "desc": "Ringkasan temuan wawancara dengan 3 level tingkat pengguna.",
     "src": "files/needfinding/needfinding.pdf"
   },
   {
     "category": "Pov & HMW",
-    "title": "Point of View dan How Might We",
+    "title": "POV dan HMW",
     "desc": "Rumusan masalah dan pertanyaan HMW tim.",
     "src": "files/povhmw/brainstorming_pov_hmw.pdf"
+  },
+  {
+    "category": "Pov & HMW",
+    "title": "Point of View dan How Might We",
+    "desc": "Laporan POV dan Pengalaman user terhadap prototipe",
+    "src": "files/povhmw/laporan.pdf"
   },
   {
     "category": "Solutions",
     "title": "Presentasi Solusi Planergy",
     "desc": "Slide konsep solusi dan sistem koin energi.",
     "src": "files/solusi/brainstorming_solusi.pdf"
+  },
+  {
+    "category": "Prototype",
+    "title": "PPT Experience Prototype oleh user",
+    "desc": "Ringkasan temuan wawancara dengan mahasiswa.",
+    "src": "files/prototipe/PPT_experience_prototype.pdf"
   }
 ]
